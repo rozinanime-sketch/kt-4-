@@ -61,7 +61,7 @@ class SuperUser(User):
         self.right = right
         SuperUser.count += 1
     def get_right(self):
-        return self._right
+        return self.right
 
 user1 = User('Paul McCartney', 'paul', '1234', 3)
 user2 = User('George Harrison', 'george', '5678', 2)
